@@ -10,7 +10,24 @@
 
 # AI Website Brochure Generator
 
-A Python tool that automatically generates company brochures by scraping website content using OpenAI's GPT models.
+A Python tool that automatically generates company brochures by scraping website content using OpenAI's GPT models. Available in two versions:
+- Basic: Single language brochure generation
+- Upgraded: Multi-language support with enhanced prompting
+
+## Features
+
+### Basic Version (ai_website_brochure.py)
+- Web scraping of company websites
+- Content extraction and cleaning
+- Automated brochure generation
+- Streaming support
+
+### Upgraded Version (ai_website_brochure_upgraded.py)
+- All basic features plus:
+- Multi-shot prompting with example brochures
+- Structured format with predefined sections
+- Automated English and German translation
+- Enhanced error handling
 
 ## Installation
 
@@ -43,14 +60,6 @@ from ai_website_brochure import create_brochure
 # Generate a brochure for a company
 brochure = create_brochure("Company Name", "https://company-website.com")
 ```
-
-## Features
-
-- Web scraping of company websites
-- Intelligent link classification
-- Content extraction and cleaning
-- Automated brochure generation using GPT models
-- Streaming support for real-time brochure creation
 
 ## Core Functions
 
